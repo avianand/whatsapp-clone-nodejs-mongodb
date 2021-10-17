@@ -1,0 +1,43 @@
+.chatBox{
+
+        display: flex;
+        padding: 15px;
+        max-height: 40px;
+        
+        &:hover{
+            background-color: rgb(238, 238, 238);
+            cursor: pointer;
+        }
+        align-items: center;
+        justify-content: space-between;
+    
+        .profilePicture{
+            color: grey;
+            cursor: pointer;
+            align-content: flex-end;
+        }
+        .activeUser{
+            display: flex;
+            margin-left: 10px;
+            align-items: center;
+            img{
+                height: 40px;
+                object-fit: contain;
+                border-radius: 50px;  
+            }
+            .activeUserDetails{
+                display: flex;
+                flex-direction: column;
+                margin-left: 20px;
+                align-items: flex-start;
+                justify-content: center;
+                .activeUserStatus{
+                    color: grey;
+                }
+            }
+       
+        }
+        .lastSeen{
+            color: grey;
+        }
+}
